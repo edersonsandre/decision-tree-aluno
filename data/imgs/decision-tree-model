@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="SRAG <= 0.5\ngini = 0.5\nsamples = 54976\nvalue = [27504, 27472]\nclass = 0", fillcolor="#ffffff"] ;
+1 [label="gini = 0.0\nsamples = 26409\nvalue = [0, 26409]\nclass = 1", fillcolor="#399de5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="RACA_COR <= 2.5\ngini = 0.072\nsamples = 28567\nvalue = [27504, 1063]\nclass = 0", fillcolor="#e68641"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="FAIXAETARIA <= 7.5\ngini = 0.124\nsamples = 14021\nvalue = [13091, 930]\nclass = 0", fillcolor="#e78a47"] ;
+2 -> 3 ;
+4 [label="gini = 0.22\nsamples = 4124\nvalue = [3605, 519]\nclass = 0", fillcolor="#e99356"] ;
+3 -> 4 ;
+5 [label="gini = 0.08\nsamples = 9897\nvalue = [9486, 411]\nclass = 0", fillcolor="#e68642"] ;
+3 -> 5 ;
+6 [label="RACA_COR <= 3.5\ngini = 0.018\nsamples = 14546\nvalue = [14413, 133]\nclass = 0", fillcolor="#e5823b"] ;
+2 -> 6 ;
+7 [label="gini = 0.011\nsamples = 13187\nvalue = [13116, 71]\nclass = 0", fillcolor="#e5823a"] ;
+6 -> 7 ;
+8 [label="gini = 0.087\nsamples = 1359\nvalue = [1297, 62]\nclass = 0", fillcolor="#e68742"] ;
+6 -> 8 ;
+}
